@@ -35,6 +35,7 @@ window.addEventListener('scroll', () => {
 let response = await axios.get(trendingUrl,{
   params: {
     api_key: apiKey,
+    limit:48,
   }
 });
 
@@ -88,6 +89,7 @@ async function getGiphy(e) {
       params: {
         api_key: apiKey,
         q: q,
+        limit:48,
       },
     });
 

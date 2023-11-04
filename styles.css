@@ -96,11 +96,11 @@ flex-wrap: wrap;
     animation: rotate 1s linear infinite; 
   }
 
-  .content_style{
+  .content{
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin-top: 130px;
-    gap: 15px;
   }
 
   .fade-out{
@@ -111,8 +111,9 @@ flex-wrap: wrap;
 
 .giphis{
     cursor: pointer;
-    height: 300px;
-    flex: 1;
+    height: 200px;
+    width: 200px;
+    margin: 0.2em;
 }
 
   

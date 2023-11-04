@@ -1,11 +1,11 @@
 
 
-const searchInput = document.querySelector(".navbar__input");
-const searchBtn = document.querySelector(".navBar__serachIcon"); // Typo in class name
-const logoImage = document.querySelector(".navBar__logoImage"); // Typo in class name
+const searchInput = document.querySelector(".form__input");
+const searchBtn = document.querySelector(".form__serachIcon");
+const logoImage = document.querySelector(".logo__image"); 
 const contentContainer = document.querySelector(".content");
-const fadeElement = document.querySelector('.navBar');
-const form = document.querySelector(".navBar__form"); 
+const fadeElement = document.querySelector('.header');
+const form = document.querySelector(".form"); 
 
 
 
@@ -16,6 +16,7 @@ searchBtn.addEventListener("click",getGiphy)
 let url = "https://api.giphy.com/v1/gifs/search?";
 let trendingUrl = "https://api.giphy.com/v1/gifs/trending?"
 let apiKey = "XV3AGWfuGBdof4NytvxH3D41VL5HVfni";
+
 
 let isFadingOut = false;
 
@@ -76,8 +77,8 @@ setInterval(function () {
 
 
 async function getGiphy(e) {
-    e.preventDefault()
-    contentContainer.innerHTML = null
+    e.preventDefault();
+    contentContainer.innerHTML = null;
     console.log("form submited")
 
   let q = searchInput.value;
